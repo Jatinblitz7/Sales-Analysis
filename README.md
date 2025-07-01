@@ -1,75 +1,41 @@
 # 📊 USA Regional Sales Analysis (2014–2018)
 
-A comprehensive Exploratory Data Analysis (EDA) of **Acme Co.’s** sales performance across the United States from 2014 to 2018. This notebook-driven project investigates trends, anomalies, and key drivers of revenue and profit to inform business strategy and dashboard development.
+This project focuses on applying **data analytics techniques to the sales domain**, with the goal of deriving actionable insights that improve sales performance and inform business strategies. Initial exploratory analysis was performed in Python, followed by Power BI dashboard development for visualization.
 
 ---
 
 ## 🧭 Objective
 
-Leverage EDA to extract **actionable insights** from Acme Co.’s historical sales data to:
-
-- Identify top-performing **products**, **sales channels**, and **regions**
-- Detect **seasonal patterns** and **sales anomalies**
-- Analyze **pricing**, **profit margins**, and **budget variances**
-- Support **pricing**, **promotion**, and **market expansion** strategies
-- Inform the structure and KPIs of a Power BI dashboard for leadership use
+- Analyze Acme Co.’s 2014–2018 sales data to identify key revenue and profit drivers  
+- Uncover regional trends, seasonal spikes, and customer behavior patterns  
+- Spot pricing/margin outliers and assess sales performance vs. budget  
+- Use insights to guide pricing, promotions, and regional sales strategy
 
 ---
 
-## 📁 Dataset Summary
+## 🔍 Key Highlights
 
-- **Source:** Internal Acme Co. records (2014–2018)
-- **Key Columns:** `Date`, `Region`, `Channel`, `Product`, `Customer Segment`, `Units Sold`, `Revenue`, `Cost`, `Profit`, `Budget`
-- **Data Size:** ~20K transactions across 5 years
+### 1. 📌 Data Profiling & Cleaning
+- Handled missing `budget` entries
+- Converted date/time fields and corrected data types
 
----
+### 2. 📈 Exploratory Data Analysis (Python)
+- **Univariate/Bivariate Analysis**: Revenue, margin, unit price trends across products, regions, channels
+- **Seasonality**: Identified consistent Q4 revenue spikes and regional sales cycles
+- **Outlier Detection**: Flagged abnormal transactions affecting unit economics
+- **Segmentation**: Clustered customers by revenue vs. profit contribution
 
-## 🔍 Project Highlights
-
-### 🧹 Data Profiling & Cleaning
-- Validated schema and ensured type consistency
-- Handled missing values (especially in `Budget`) using forward-fill and median strategies
-- Parsed `Date` column for time-series decomposition
-
-### 📈 Univariate & Bivariate Analysis
-- Explored distribution of key metrics: `Revenue`, `Profit Margin`, `Unit Price`
-- Grouped performance by `Product`, `Channel`, `Region`, and `Customer Segment`
-- Highlighted high-volume but low-margin segments
-
-### 📆 Trend & Seasonality
-- Charted **monthly** and **yearly** revenue trends
-- Detected consistent **seasonal spikes** (e.g., Q4 peaks)
-- Assessed month-over-month and YoY growth patterns
-
-### 🚨 Outlier Detection
-- Identified unusually high/low `Revenue` and `Unit Price` transactions
-- Flagged potential **data entry errors** and **pricing anomalies**
-
-### 📊 Correlation & Segmentation
-- Measured inter-feature relationships using correlation heatmaps
-- Segmented customers by **Revenue vs. Profitability** quadrants
+### 3. 📊 Dashboarding (Power BI)
+- Created interactive dashboards with filters by region, channel, and product line
+- Added KPI cards, trend charts, and budget vs. actual comparisons
+- Highlighted underperforming segments and high-margin opportunities
 
 ---
 
-## ❓ Problem Statement
+## 📁 Tools & Technologies
 
-> Analyze Acme Co.’s 2014–2018 USA sales data to identify key revenue and profit drivers across products, channels, and regions; uncover seasonal trends and outliers; and align performance against budgets. Use these insights to optimize pricing, promotions, and market expansion for sustainable growth and reduced concentration risk.
-
----
-
-## 🛠️ Tools & Libraries Used
-
-- **Python**: `pandas`, `numpy`, `matplotlib`, `seaborn`, `plotly`
-- **Jupyter Notebook**: For exploratory analysis
-- **Power BI (planned)**: For dashboard visualization based on insights
+- **Python (EDA)**: `pandas`, `matplotlib`, `seaborn`, `plotly`
+- **Power BI**: For final executive dashboard
+- **Jupyter Notebook**: For development and insight extraction
 
 ---
-
-## 📌 Next Steps
-
-- Develop an interactive **Power BI dashboard** showcasing key KPIs
-- Incorporate **forecasting** and **budget tracking** visuals
-- Automate data pipeline for monthly refresh and insight tracking
-
----
-
